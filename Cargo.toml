@@ -1,0 +1,15 @@
+[package]
+name = "midi_splitter"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.80"
+console_error_panic_hook = "0.1.7"
+leptos = { version = "0.6.9", features = ["csr", "nightly"] }
+web-sys = { version = "0.3.69", features = ["File", "FileList", "Blob", "BlobPropertyBag", "FileReader"] }
+futures-channel = "0.3.30"
+midly = "0.5.3"
+zip = { version = "0.6.6", default-features = false }
